@@ -22,5 +22,4 @@ route::group(['middleware' => 'auth'], function () {
     Route::resource('categories', CategoriesController::class);
     Route::resource('products', ProductsController::class);
     Route::resource('pos', TransactionController::class);
-    Route::get('/products/json', [TransactionController::class, 'getProductsJson']);
 });
